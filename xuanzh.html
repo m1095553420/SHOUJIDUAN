@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="font1/iconfont.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+	<style>
+	body{
+		background-color:#E7E7E7;
+	}
+   .gWidth{width: 14.75rem;
+   	margin: 0 auto;
+
+   }
+   .fanhui{
+   	float:left;
+   	margin-top:0.5rem;
+
+   }
+   .biaoti{
+   	margin-left:1.1rem;
+   	margin-top:0.5rem;
+   	font-family:Arial;
+   	font-size:0.65rem;
+   	color:#fff;
+   	float:left;
+   }
+   .gouwuche{
+   	float:right;
+   		margin-top:0.5rem;
+
+   }
+   .gwc{
+   	width: 0.75rem;
+   	height: 0.5rem;
+   	background-color:#fff;
+   	border-radius:50%;
+   	float:right;
+   	font-size:0.3rem;
+   	text-align:center;
+   	margin-top:0.4rem;
+   	margin-right:-1.1rem;
+   }
+   .top{
+   	width: 100%;
+   	height: 5rem;
+   	background-color:rgba(56, 71, 78, 0.7);
+   }
+ 
+   		.button1{background:#2D393F;
+   				float:left;
+   				width:7rem;
+			height: 1.575rem;
+			color:#fff;
+				font-size:0.3rem;
+				margin-top:1.5rem;
+				border-radius:5px;
+
+   		}
+   		.button2{background:#F5846A;
+   					float:right;width:7rem;
+			height: 1.575rem;
+			color:#fff;
+				font-size:0.3rem;
+				margin-top:1.5rem;
+				border-radius:5px;}
+
+   		
+   		.wil{
+   			height:100px;
+   			
+   			
+   		}
+
+   		.cont{
+   			margin-top:0.65rem;
+   			width: 14.8rem;
+   			height: 14.8rem;
+   			background-color:#fff;
+   			border-radius:0.2rem;
+
+   			
+   			
+   		}
+   		.annn{
+   			width: 0.5rem;
+   			height: 0.2rem;
+   			background-color:#67AFD5;
+   			border-radius:3px;
+   			float:left;
+   		}
+   		.bnnn{
+   			width: 0.5rem;
+   			height: 0.2rem;
+   			background-color:#323B3E;
+   			border-radius:3px;
+   			float:left;
+   				margin-left: 0.2rem;
+
+   		}
+   		.cnnn{
+   			width: 0.5rem;
+   			height: 0.2rem;
+   			background-color:#323B3E;
+   			border-radius:3px;
+   			float:left;
+   				margin-left: 0.2rem;
+   		}
+   		.din{
+   			position:relative;
+   			left:1rem;
+   			bottom:0.95rem;
+   		}
+   		.zzz{
+   			width: 14.8rem;
+   			height: 3.225rem;
+   			border-radius:3px;
+   			background-color:#fff;
+   			margin-top:-3rem;
+   			font-family:Arial;
+   			font-size:0.65rem;
+   		}
+   		.bn{
+   			width: 3.6rem;
+   			height: 1.675rem;
+   			background-color:#ccc;
+   			border-radius:3px;
+   			text-align:center;
+   			line-height:1.675rem;
+   			float:right;
+   			margin-right:0.9rem;
+   			margin-top:-0.875rem;
+
+   		}
+   		.pp{
+   			padding-top:1.25rem;
+   			margin-left:1.45rem;
+   		}
+   		.jia{
+   			width: 14.75rem;
+   			height: 2.5rem;
+   			background-color:#fff;
+   			margin-top:0.65rem;
+   			border-radius:3px;
+   			line-height:2.5rem;
+   		}
+   		.jiahao{
+   			margin-right:1rem;
+   			margin-left: 1.125rem;
+   		}
+   		.bot{
+   			width: 14.75rem;
+   			height: 12.75rem;
+   			background-color:#fff;
+   			border-radius:3px;
+   			margin-top:0.65rem;
+   		}
+   		.sd{
+   			margin-left: 5.875rem;
+   			margin-top:0.875rem;
+   		}
+   		.ys{
+   			margin-left:0.4rem;
+   			font-weight:bold;
+   		}
+   		.zi{
+   			text-align:center;
+   			font-size:0.3rem;
+   			color:#A6A6AD;
+   		}
+   		
+   		.pin{background-color:#F0C9CE;width: 1.75rem;
+				height: 1.75rem;
+				border-radius:3px;
+				float:left;
+				 margin-left: 4.125rem;
+				 margin-right:0.625rem;margin-top: 0.9rem;}
+   		.zise{
+   				background-color:#AF687A;
+   				width: 1.75rem;
+				height: 1.75rem;
+				border-radius:3px;
+				float:left;
+				margin-right:0.625rem;margin-top: 0.9rem;
+			}
+   		.gb{
+   			background-color:#87A6B2;
+   			width: 1.75rem;
+				height: 1.75rem;
+				border-radius:3px;
+				float:left;margin-top: 0.9rem;
+			}
+			.zxin{
+					width: 0.7rem;
+					height: 0.7rem;
+					background-color:#fff;
+					border-radius:50%;
+					margin:0.5rem auto;
+
+
+			}
+			.xian{width: 11.35rem;
+					height: 1rem;
+					border-top:1px solid #DCDCDC;
+					margin-left:1.75rem;
+					margin-top:1rem;
+
+
+			}
+			.clear{clear:both;}
+			.box1{
+				background-color:#DADADE;width: 1.75rem;
+				height: 1.75rem;
+				border-radius:3px;
+				float:left;
+				margin-top:0.9rem;
+				margin-right:0.6rem;
+				margin-left:1.25rem;
+				text-align:center;
+				line-height:1.75rem;
+			}
+			.box2{background-color:#DADADE;width: 1.75rem;
+				height: 1.75rem;
+				border-radius:3px;
+				float:left;
+				margin-top:0.9rem;
+				margin-right:0.6rem;
+				text-align:center;
+				line-height:1.75rem;
+				}
+			.box3{
+				background-color:#DADADE;width: 1.75rem;
+				height: 1.75rem;
+				border-radius:3px;
+				float:left;
+				margin-top:0.9rem;
+				margin-right:0.6rem;
+				text-align:center;
+				line-height:1.75rem;
+			}
+			.box4{
+				background-color:#DADADE;width: 1.75rem;
+				height: 1.75rem;
+				border-radius:3px;
+				float:left;
+				margin-top:0.9rem;
+				margin-right:0.6rem;
+				text-align:center;
+				line-height:1.75rem;
+			}
+			.box5{
+				background-color:#DADADE;width: 1.75rem;
+				height: 1.75rem;
+				border-radius:3px;
+				float:left;
+				margin-top:0.9rem;
+				text-align:center;
+				line-height:1.75rem;
+
+			}
+			.btmm{
+				
+				margin-top: 1.25rem;
+				background-color:#3A4144;
+				color:#fff;
+				border-radius:5px;
+				margin-left:6rem;
+			}
+			.btmmm{
+				float:left;
+				font-size:16px;
+			}
+			.xiahua{
+				float:right;
+				width:10.75rem;
+			}
+			.botm{
+				margin-top:1.84rem;
+
+			}
+			.botmmen{
+				height: 4.25rem;
+			}
+			.zuo{
+					float:left;
+					margin-right: 1.3rem;
+			}
+			.zhong{
+					float:left;
+					margin-right: 1.3rem;
+			}
+			.you{
+					float:left;
+			}
+			.img1{
+				margin-top:0.4rem;
+				margin-left:0.2rem;
+				width: 1.75rem;
+				height: 1rem;
+			}
+			.img2{
+				width: 1.85rem;
+				height: 1.85rem;
+			}
+   </style>
+</head>
+<body>
+<div class="top">
+  <div class="gWidth ">
+  
+  <span class="fanhui iconfont icon-fanhui"></span> 
+  <h4 class="biaoti"> Woman, Dresses</h4>
+  <span class="gouwuche iconfont icon-buy-car">  </span>
+  <span class="gwc">3</span>
+	<div class="clear"></div>
+  </div>
+
+	<div class="gWidth wil">
+	<button class="button1">ADD TO WISHLIST</button>
+	<button class="button2">ADD TO CART</button>
+	</div>
+
+  </div>
+   <div class="cont gWidth">
+   <img src="img/nv.jpg"width="100%"alt="">
+   	
+
+	<div class="din"><span class="annn"></span><span class="bnnn"></span><span class="cnnn"></div></span>
+   </div>
+   <div class="zzz gWidth">
+   <p class="pp"> Elegant Pink Dresses</p><div class="bn">$605,00</div>
+   	
+
+
+   </div>
+   <div class="jia gWidth">
+   	<span class="  jiahao iconfont  ">&#xe501;</span><span>Description</span>
+   </div>
+   <div class="bot gWidth">
+   	<span class=" sd iconfont ">&#xea12;<span class="ys">Color:</span></span>
+   				<p class="zi"> Choose a colour for itme</p>
+   				<div>
+   				<div class="pin"> <div class="zxin"></div></div>
+   				<div class="zise"></div>
+   				<div class="gb"></div>
+   				<div class="clear"></div>
+   				</div>
+   				<div class="xian"></div>
+   				
+   		<span class=" sd iconfont ">&#xe7ad;<span class="ys">Size:</span></span>
+   		<p class="zi"> Size available for this item</p>	
+   		<div>
+   			<div class="box1">6</div>
+   			<div class="box2">8</div>
+   			<div class="box3">10</div>
+   			<div class="box4">11</div>
+   			<div class="box5">12</div>
+		
+
+   		</div>			
+   				
+   	</div>
+   	<div class="gWidth">
+   	<button class="btmm ">Add to Cart</button></div>
+   	<div class="gWidth botm">
+   	<span class="btmmm">SHARE ON</span><hr class="xiahua" />
+   	</div>
+   	<div class="botmmen gWidth">
+   		
+		<div class="zuo"><img class="img2"  src="img/niao.jpg" alt=""><img class="img1" src="img/duihua1.jpg"  alt=""></div>
+		<div class="zhong"><img  class="img2" src="img/faceb.jpg" alt=""><img class="img1" src="img/duihua2.jpg" alt=""></div>
+		<div class="you"><img  class="img2" src="img/weibo.jpg" alt=""><img class="img1" src="img/duihua3.jpg" alt=""></div>
+   	</div>
+</body>
+</html>
